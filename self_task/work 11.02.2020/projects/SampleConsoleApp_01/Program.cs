@@ -7,13 +7,13 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-            int[] array = {4, 2 , 5, 9, 333};
+            int[] array = { 4, 2, 5, 9, 333 };
             //проверка метода Bubble
-            SortAray.Bubble(array);
+            SortAray.BubbleSort(array);
             for (int i = 0; i < array.Length; i++)
                 Console.WriteLine(array[i]);
             //проверка метода Selection
-            SortAray.Selection(array);
+            SortAray.SelectionSort(array);
             for (int i = 0; i < array.Length; i++)
                 Console.WriteLine(array[i]);
             Console.ReadKey();

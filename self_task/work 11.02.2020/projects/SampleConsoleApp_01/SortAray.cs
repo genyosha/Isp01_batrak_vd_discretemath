@@ -6,12 +6,12 @@ namespace ConsoleApp5
 {
     static class SortAray
     {
-        public static void Bubble(int[] array)
+        public static void BubbleSort(int[] array)
         {
             if (array == null || array.Length < 2)
                 return;
             bool swapDetected = false;
-            while(true)
+            while (true)
             {
                 swapDetected = false;
                 for (int index = 0; index < array.Length - 1; index++)
@@ -24,13 +24,13 @@ namespace ConsoleApp5
                         swapDetected = true;
                     }
                 }
-                
+
                 if (!swapDetected)
                     break;
             }
         }
-        
-        public static void Selection(int[] array)
+
+        public static void SelectionSort(int[] array)
         {
             if (array == null || array.Length < 2)
                 return;
@@ -39,7 +39,7 @@ namespace ConsoleApp5
                 int maxIndex = index;
                 for (int next = index + 1; next < array.Length; next++)
                     if (array[maxIndex] < array[next])
-                            maxIndex = next;
+                        maxIndex = next;
                 if (maxIndex != index)
                 {
                     int tmp = array[index];
@@ -50,6 +50,4 @@ namespace ConsoleApp5
             }
         }
     }
-
-
 }
